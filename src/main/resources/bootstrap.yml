@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          #git仓库地址
+          uri: https://github.com/xybc1122/config-cloud.git
+          username: xybc1122
+          password: wawzj7788
+          #超时时间
+          timeout: 5
+          #默认,master分支
+          default-label: master
+server:
+  port: 10000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8660/eureka/
